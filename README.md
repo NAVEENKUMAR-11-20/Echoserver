@@ -26,12 +26,8 @@ Testing the server and client
 
 
 import socket
-
-
 HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
 PORT = 65432  # Port to listen on (non-privileged ports are > 1023)
-
-
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen()
@@ -43,29 +39,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
-
-
 # echo-client.py
 
-
 import socket
-
-
 HOST = "127.0.0.1"  # The server's hostname or IP address
-PORT = 65432  # The port used by the server
-
-
+PORT = 65432  # The port used by the serve
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
     s.sendall(b"Hello, world")
     data = s.recv(1024)
-
-
 print(f"Received {data!r}")
-
-
-
-
 
 ## OUTPUT:
 <img width="1316" height="436" alt="image" src="https://github.com/user-attachments/assets/4568310a-7dbe-4b15-a32e-655484358375" />
