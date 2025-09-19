@@ -65,10 +65,10 @@ print(f"Received {data!r}")
 ```
 
 ## OUTPUT:
-<img width="1262" height="412" alt="server" src="https://github.com/user-attachments/assets/d2e25444-543c-4223-ad9a-6c1dad328d8e" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/208febdf-db68-4b4e-a150-571dd9ae8f18" />
 
-<img width="1316" height="436" alt="client" src="https://github.com/user-attachments/assets/7f3336b8-6385-43fd-ab2b-6da43318dd42" />
 
 ## RESULT:
 The program is executed successfully
+
 
